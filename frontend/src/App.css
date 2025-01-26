@@ -1,0 +1,80 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+h1 {
+  color: #5e0b40;
+}
+
+.app {
+  background-color: #ffeef8; /* Нежнорозовый фон */
+  color: #8a115e; /* Темно-розовый текст */
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  
+  /* Центрирование */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Высота на весь экран */
+  margin: 0; /* Убираем отступы */
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: auto; /* Это позволит footer оставаться внизу */
+  width: 100%;
+}
+
+
+.recommendations {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px;
+}
+
+.song-card {
+  box-shadow: 0 0 20px #ff6f8f;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  width: 400px; /* Увеличиваем ширину карточки */
+  background-color: white; /* Белый фон */
+  display: flex; /* Используем flexbox для размещения обложки и текста */
+  align-items: center; /* Центрируем по вертикали */
+}
+
+.cover {
+  max-width: 100px; /* Ограничиваем ширину обложки */
+  border-radius: 5px;
+  margin-right: 15px; /* Отступ справа от обложки */
+}
+
+.song-info {
+  text-align: left; /* Выравниваем текст в карточке */
+}
+
+
+input[type="file"] {
+  margin: 10px 0;
+  padding: 10px;
+}
+
+button {
+  background-color: #ff6f8f; /* Розовая кнопка */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #ff4b69; /* Более темная кнопка при наведении */
+}

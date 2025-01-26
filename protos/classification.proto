@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package classification;
+
+option go_package = "/music-service";
+
+service ClassificationService {
+     rpc UploadAudio(UploadAudioRequest) returns (Genre); 
+}
+
+message UploadAudioRequest {
+     string filename = 1;
+     bytes file_data = 2;
+}
+
+enum Genres {
+     UNKNOWN = 0;
+
+     blues = 1;
+     classical = 2;
+     country = 3;
+     disco = 4;
+     hiphop = 5;
+     jazz = 6;
+     metal = 7;
+     pop = 8;
+     reggae = 9;
+     rock = 10;
+}
+
+message Genre {
+     Genres genre = 1;
+}
